@@ -33,7 +33,12 @@ body {
   margin: 0px;
   list-style: none;
 }
-/* Header */
+
+/*
+ Header 
+ 
+ */
+
 .container {
   display: flex;
   padding-left: 15px;
@@ -105,7 +110,6 @@ body {
   margin-left: auto;
   margin-top: 32px;
   margin-bottom: 32px;
-  display: flex;
 }
 
 .contacts-nav .contacts-list + .contacts-list {
@@ -176,11 +180,6 @@ body {
   /* padding: 0px; */
   /* background-color: teal; */
 }
-
-/* .main-hero {
-  padding-left: auto;
-  padding-right: auto;
-} */
 
 .main-title {
   max-width: 696px;
@@ -572,16 +571,6 @@ Footer
   line-height: 30px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
-/* .mail-to::after {
-  content: "";
-  width: 13px;
-  height: 13px;
-  background-image: url(../img/svg-sprite/plain.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  fill: #ffffff;
-} */
 
 .mail-icon {
   margin-left: 10px;

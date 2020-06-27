@@ -118,10 +118,23 @@ img {
 }
 
 .contacts-nav {
+  display: flex;
+  align-items: center;
   margin-left: auto;
   margin-top: 32px;
   margin-bottom: 32px;
-  display: flex;
+  
+}
+
+
+.contacts-list {
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon-mail-tel {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .contacts-nav .contacts-list + .contacts-list {
@@ -129,8 +142,10 @@ img {
 }
 
 .contacts {
-  color: var(--text-color);
+   display: flex;
+  align-items: center;
 
+  color: var(--text-color);
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
@@ -265,7 +280,166 @@ img {
 }
 
 /* Footer */
+.footer-content {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.logo-footer {
+  display: inline-block;
+  margin-top: 45px;
+  margin-bottom: 0px;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding-bottom: 60px;
+}
+
+.adress {
+  display: block;
+  margin-top: 20px;
+
+  color: var(--text-color-w);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
+
+.contacts-in-footer {
+  display: inline-block;
+  margin-top: 9px;
+
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.contacts-in-footer:hover,
+.contacts-in-footer:focus {
+  outline: none;
+  color: var(--accent-collor);
+  /* border: 1px solid var(--accent-collor); */
+}
+
+.contacts-links {
+  display: flex;
+}
+
+.connect {
+  display: block;
+}
+
+.follow {
+  display: block;
+  margin-left: 69px;
+  margin-top: 57px;
+}
+
+.footer-title {
+  margin-bottom: 20px;
+  margin-top: 0px;
+
+  color: var(--text-color-w);
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 700;
+  /* text-align: center; */
+}
+.icon-follow {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-follow > .team-icon-li {
+  fill: var(--text-color-w);
+}
+
+.mailing {
+  display: inline-block;
+  padding-top: 57px;
+  margin-left: auto;
+}
+
+.mail-to {
+  display: flex;
+  padding: 10px 29px;
+  border-radius: 4px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--accent-collor);
+  color: var(--text-color-w);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.mail-icon {
+  margin-left: 10px;
+  fill: #ffffff;
+}
+
+/* Css для иконок в футере */
+
+.contacts-team {
+  justify-content: center;
+  display: flex;
+}
+
+.contacts-team > li {
+  display: flex;
+  height: 44px;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.contacts-team > li:last-child {
+  margin-right: 0px;
+}
+
+.team-icon-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--text-color);
+
+  width: 44px;
+  height: 44px;
+}
+.link-icon-team {
+  fill: currentColor;
+}
+
+.link-icon-team:hover,
+.link-icon-team:focus {
+  outline: none;
+  fill: var(--text-color-w);
+}
+
+.team-icon-li:hover,
+.team-icon-li:focus {
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--accent-collor);
+  fill: var(--text-color-w);
+}
+
+
+/* 
 .footer-content {
   display: flex;
   padding-left: 15px;
@@ -335,5 +509,5 @@ img {
   line-height: 1.14;
   font-weight: 700;
   /* text-align: center; */
-}
+} */
 

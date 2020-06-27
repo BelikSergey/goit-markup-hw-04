@@ -26,6 +26,7 @@
             alt="Основной логотип Веб Студия"
           />
         </a>
+
         <ul class="list link-nav">
           <li class="link-nav-list">
             <a class="link header" href="./index.html">Студия</a>
@@ -34,17 +35,25 @@
             <a class="link header" href="./portfolio.html">Портфолио</a>
           </li>
           <li class="link-nav-list">
-            <a class="link header" href="">Контакты</a>
+            <a class="link header" href="/">Контакты</a>
           </li>
         </ul>
         <ul class="list contacts-nav">
           <li class="contacts-list">
-            <a class="contacts" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="contacts" href="mailto:info@devstudio.com">
+              <svg class="nav-icon-mail-tel" width="22px" height="16px">
+                <use href="./img/symbol-defs.svg#icon-email"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="contacts-list">
-            <a class="contacts" href="tel:380961111111">+38 096 111 11 11</a>
+            <a class="contacts" href="tel:380961111111">
+              <svg class="nav-icon-mail-tel" width="15px" height="20px">
+                <use href="./img/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </nav>
@@ -220,7 +229,7 @@
             />
           </a>
 
-          <address class="address">
+          <address class="adress">
             г. Киев, пр-т Леси Украинки, 26 <br />
 
             <a class="contacts-in-footer" href="mailto:info@example.com"
@@ -237,30 +246,63 @@
         <section class="connect">
           <div class="follow">
             <h2 class="footer-title">присоединяйтесь</h2>
-            <ul class="list contacts-links">
-              <li>
-                <a class="link header" href="/" aria-label="ссылка на инстаграм"
-                  >Instagram</a
+            <ul class="list contacts-team">
+              <li class="icon-follow">
+                <a
+                  class="link team-icon-li"
+                  href=""
+                  aria-label="ссылка на инстаграм"
                 >
+                  <svg class="link-icon" width="21px" height="21px">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="link header" href="/" aria-label="ссылка на твиттер"
-                  >Twitter</a
+              <li class="icon-follow">
+                <a
+                  class="link team-icon-li"
+                  href="/"
+                  aria-label="ссылка на твиттер"
                 >
+                  <svg class="link-icon" width="21px" height="21px">
+                    <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="link header" href="/" aria-label="ссылка на фейсбук"
-                  >Facebook</a
+              <li class="icon-follow">
+                <a
+                  class="link team-icon-li"
+                  href="/"
+                  aria-label="ссылка на фейсбук"
                 >
+                  <svg class="link-icon" width="21px" height="21px">
+                    <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="link header" href="/" aria-label="ссылка на линкедин"
-                  >LinkedIn</a
+              <li class="icon-follow">
+                <a
+                  class="link team-icon-li"
+                  href="/"
+                  aria-label="ссылка на линкедин"
                 >
+                  <svg class="link-icon" width="21px" height="21px">
+                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
         </section>
+        <div class="mailing">
+          <h2 class="footer-title">подпишитесь на рассылку</h2>
+          <button class="mail-to" type="button">
+            Подписаться
+            <svg class="mail-icon" width="24px" height="24px">
+              <use href="./img/symbol-defs.svg#icon-plain"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
   </body>
