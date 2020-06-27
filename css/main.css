@@ -99,6 +99,8 @@ body {
 }
 
 .contacts-nav {
+  display: flex;
+  align-items: center;
   margin-left: auto;
   margin-top: 32px;
   margin-bottom: 32px;
@@ -109,7 +111,20 @@ body {
   margin-left: 30px;
 }
 
+.contacts-list {
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon-mail-tel {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 .contacts {
+  display: flex;
+  align-items: center;
+
   color: var(--text-color);
   font-size: 14px;
   line-height: 1.14;
@@ -135,6 +150,7 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
+  padding: 200px 452px;
   background-position: center;
 
   /* background-image: url(../img/Header-img.jpg); */
@@ -152,8 +168,8 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
   /* margin: 0px; */
   /* padding: 0px; */
   /* background-color: teal; */
@@ -166,8 +182,11 @@ body {
 
 .main-title {
   max-width: 696px;
+  /* display: block; */
   margin-bottom: 30px;
   margin-top: 0px;
+  /* margin-left: auto;
+  margin-right: auto; */
 
   color: var(--text-color-w);
 
@@ -180,7 +199,7 @@ body {
 }
 
 .main {
-  display: inline-block;
+  /* display: inline-block; */
   min-width: 200px;
   padding: 10px 32px;
 
