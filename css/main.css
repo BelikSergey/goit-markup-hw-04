@@ -17,7 +17,7 @@
   --background-white: #f5f4fa;
 }
 body {
-  background-color: var(--background-grey);
+  background-color: var(--text-color-w);
   color: var(--text-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
@@ -60,6 +60,7 @@ body {
 }
 .link:hover,
 .link:focus {
+  outline: none;
   color: var(--accent-collor);
   border: 1px solid var(--accent-collor);
 }
@@ -135,6 +136,7 @@ body {
 
 .contacts:hover,
 .contacts:focus {
+  outline: none;
   color: var(--accent-collor);
 }
 
@@ -215,11 +217,16 @@ body {
 
 .link.main:hover,
 .link.main:focus {
+  outline: none;
   color: var(--accent-collor);
   background-color: var(--text-color-w);
 }
 
-/* секция с приемуществами */
+/*
+
+ секция с приемуществами
+ 
+ */
 
 .advantages {
   padding-top: 94px;
@@ -241,6 +248,7 @@ body {
   margin-bottom: 30px;
 
   background-color: var(--background-white);
+  border-radius: 4px;
 }
 
 .list-advantages.title {
@@ -265,7 +273,11 @@ body {
   /* display: inline-block; */
 }
 
-/* чем мы занимаемся */
+/* 
+
+    чем мы занимаемся
+    
+*/
 
 .services-container {
   display: block;
@@ -305,7 +317,11 @@ body {
   text-align: center;
 }
 
-/* cекция Наша команда */
+/* 
+
+cекция Наша команда
+
+*/
 
 .team-list {
   /* width: 270px; */
@@ -360,11 +376,85 @@ body {
   display: flex;
 }
 
-/* Клиенты */
+.contacts-team > li {
+  display: flex;
+  height: 44px;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+}
 
-/* .list-customers {
-  display: block;
-} */
+.contacts-team > li:last-child {
+  margin-right: 0px;
+}
+
+.team-icon-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  fill: var(--text-color);
+
+  width: 44px;
+  height: 44px;
+}
+.link-icon-team {
+  fill: currentColor;
+}
+
+.link-icon-team:hover,
+.link-icon-team:focus {
+  outline: none;
+  fill: var(--text-color-w);
+}
+
+.team-icon-li:hover,
+.team-icon-li:focus {
+  outline: none;
+  border-radius: 50%;
+  background-color: var(--accent-collor);
+  fill: var(--text-color-w);
+}
+
+/* 
+
+Клиенты 
+
+*/
+
+.customer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  padding: 0;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--text-color);
+  fill: var(--text-color);
+}
+
+.customer-list {
+  margin-right: 30px;
+}
+
+.customer-list:last-child {
+  margin-right: 0;
+}
+
+.customer-link:focus,
+.customer-link:hover {
+  outline: none;
+  border: 1px solid var(--accent-collor);
+  fill: var(--accent-collor);
+}
+
+.customer-link {
+  fill: currentColor;
+}
 
 .customers {
   padding-top: 94px;
@@ -372,7 +462,10 @@ body {
   background-color: var(--background-grey);
 }
 
-/* Footer */
+/* 
+Footer 
+
+*/
 
 .footer-content {
   display: flex;
@@ -418,6 +511,7 @@ body {
 
 .contacts-in-footer:hover,
 .contacts-in-footer:focus {
+  outline: none;
   color: var(--accent-collor);
   /* border: 1px solid var(--accent-collor); */
 }
@@ -445,4 +539,51 @@ body {
   line-height: 1.14;
   font-weight: 700;
   /* text-align: center; */
+}
+.icon-follow {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-follow > .team-icon-li {
+  fill: var(--text-color-w);
+}
+
+.mailing {
+  display: inline-block;
+  padding-top: 57px;
+  margin-left: auto;
+}
+
+.mail-to {
+  display: flex;
+  padding: 10px 29px;
+  border-radius: 4px;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--accent-collor);
+  color: var(--text-color-w);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* .mail-to::after {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-image: url(../img/svg-sprite/plain.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  fill: #ffffff;
+} */
+
+.mail-icon {
+  margin-left: 10px;
+  fill: #ffffff;
 }
